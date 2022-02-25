@@ -19,8 +19,6 @@ const HomePage = () => {
   const productList = useSelector((state) => state.productList);
   const { error, loading, products, page, pages } = productList;
 
-  console.log(keyword);
-
   useEffect(() => {
     dispatch(listProducts(keyword, pageQuery));
   }, [dispatch, keyword, pageQuery]);

@@ -48,7 +48,6 @@ const ProfilePage = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(email, password);
 
     if (password !== confirmPassword) {
       setMessage("Passwords do not match");

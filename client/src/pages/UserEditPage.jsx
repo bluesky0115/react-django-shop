@@ -11,7 +11,6 @@ import { USER_UPDATE_RESET } from "../constants/userConst";
 
 const UserEditPage = () => {
   const { id } = useParams();
-  console.log(id);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

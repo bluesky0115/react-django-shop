@@ -21,7 +21,7 @@ const RegisterPage = () => {
   const redirect = searchParams.get("redirect")
     ? searchParams.get("redirect")
     : "/";
-  console.log(redirect);
+
   const { error, loading, userInfo } = userRegister;
 
   useEffect(() => {
@@ -32,7 +32,6 @@ const RegisterPage = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(email, password);
 
     if (password !== confirmPassword) {
       setMessage("Passwords do not match");

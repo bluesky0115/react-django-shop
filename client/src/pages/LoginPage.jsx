@@ -18,7 +18,6 @@ const LoginPage = () => {
   const redirect = searchParams.get("redirect")
     ? searchParams.get("redirect")
     : "/";
-  console.log(redirect);
 
   const userLogin = useSelector((state) => state.userLogin);
   const { error, loading, userInfo } = userLogin;
@@ -31,7 +30,6 @@ const LoginPage = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(email, password);
     dispatch(login(email, password));
   };
 
